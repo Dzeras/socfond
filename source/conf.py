@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Documentation'
+project = 'Terms of reference'
 copyright = '2023, dzerassa'
 author = 'dzerassa'
 
@@ -14,6 +14,8 @@ author = 'dzerassa'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = []
+latex_documents = [('index', 'doc.tex', u'Docs', u'Dzerassa', 'manual'),]
+
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -25,3 +27,4 @@ exclude_patterns = []
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+language = 'ru'
